@@ -45,8 +45,8 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">HOME</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">ABOUT US</a>
+              <li class="nav-item" id="">
+                <a class="nav-link" id="" href="#about_us">ABOUT US</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">GALLERY</a>
@@ -54,27 +54,25 @@
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
-                  href="#"
+                  href="#services"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false">
                   SERVICES
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Hire of Grounds</a></li>
-                  <li><a class="dropdown-item" href="#">Accomodation</a></li>
+                  <li><a class="dropdown-item" href="./grounds.html">Hire of Grounds</a></li>
+                  <li><a class="dropdown-item" href="./accomodation.html">Accomodation</a></li>
                   <li>
-                    <a class="dropdown-item" href="#">Conference Facilities</a>
+                    <a class="dropdown-item" href="./conference.html">Conference Facilities</a>
                   </li>
-                  <li><a class="dropdown-item" href="#">Restaurant</a></li>
+                  <li><a class="dropdown-item" href="./restaurant.html">Restaurant</a></li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link">CONTACTS</a>
+                <a class="nav-link" href="#contacts">CONTACTS</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./book.html">BOOKING</a>
-              </li>
+
             </ul>
             <form class="d-flex" role="search">
               <input
@@ -180,19 +178,21 @@
     </section>
 
     <!--about us-->
-    <section>
+    <section class="my-5" id="about_us">
       <div class="text-center">
         <h4 class="py-3"><u>ABOUT US</u></h4>
+        <div>
+          <p>Kenya Institute of Special Education (KISE) is a semi-autonomous government agency of the Ministry of Education, Kenya. <br>
+             It was established through a Legal Notice No. 17 of 14th February 1986.</p>
+          <p>An inclusive Kenyan society, in which every child with special needs and disability accesses quality education and achieves their fullest human potential</p>
+          <p>Facilitates service provision for persons with special needs and disabilities through human capital development, research, functional assessment, <br>
+             rehabilitation, Inclusive education practices, technology and production of learning and assistive materials</p>
+        </div>
       </div>
     </section>
 
-    <br /><br /><br /><br />
-    <br /><br /><br /><br />
-    <br /><br /><br /><br />
-
-
     <!--services-->
-    <section>
+    <section id="services">
       <div class="text-center">
         <h4 class="py-3"><u>SERVICES</u></h4>
         <div class="row">
@@ -302,15 +302,66 @@
     </section>
 
     <!--contact us-->
-    <section>
+    <section class="py-5 mb-4" id="contacts">
       <div class="text-center">
         <h3 class="py-3"><u>GET IN TOUCH</u></h3>
+        <div class="container">
+          <div class="">
+            <div class="">
+              <div class="card px-5 pt-5" style="background-color: #f2f2f2;">
+                <form target="_blank" action="https://formsubmit.co/mfabian601@gmail.com" method="POST">
+                  <!-- 2 column grid layout with text inputs for the first and last names -->
+                  <div class="row mb-4">
+                    <div class="col">
+                      <div class="form-outline">
+                          <label class="form-label" for="form6Example1">First name</label>
+                        <input type="text" id="form6Example1" class="form-control" />
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="form-outline">
+                          <label class="form-label" for="form6Example2">Last name</label>
+                        <input type="text" id="form6Example2" class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+          
+                  <div class="row mb-4">
+                      <div class="col">
+                        <div class="form-outline">
+                            <label class="form-label" for="form6Example1">Email</label>
+                          <input type="text" id="form6Example1" class="form-control" required />
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="form-outline">
+                            <label class="form-label" for="form6Example2">Phone Number</label>
+                          <input type="text" id="form6Example2" class="form-control" />
+                        </div>
+                      </div>
+                    </div>
+       
+                  <!-- Message input -->
+                  <div class="form-outline mb-4">
+                      <label class="form-label" for="form6Example7"
+                      >Message</label
+                    >
+                    <textarea class="form-control" id="form6Example7" rows="3"></textarea>
+                  </div>
+                  <!-- Submit button -->
+                  <button type="submit" class="btn btn-primary btn-block mb-4">
+                    Submit
+                  </button>
+                </form>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
       </div>
     </section>
-
-    <br /><br /><br /><br />
-    <br /><br /><br /><br />
-    <br /><br /><br /><br />
 
     <!--footer-->
     <section style="background-color: #e3f2fd;">
@@ -324,6 +375,15 @@
         <!-- Copyright -->
       </footer>
     </section>
+
+
+    <!--footer 2-->
+    <!-- Footer -->
+
+<!-- Footer -->
+    <!--footer 2-->
+
+
 
     <!--js link-->
     <!-- <script src="./script.js"></script> -->
